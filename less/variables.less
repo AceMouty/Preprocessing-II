@@ -2,6 +2,7 @@
 // Color assignments 
 @font-color: @shark;
 @button-bg: @eastern-blue;
+@button-bg-dark: @eastern-blue-dark;
 @main-bg:  @white;
 @navigation-border: @silver;
 @footer-bg: @sandy-beach;
@@ -12,3 +13,45 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+@eastern-blue-dark: #008080;
+
+// Media Queries
+@mobile: ~"(max-width:500px)";
+
+// ===========================
+// Mobile Styling
+// ===========================
+
+// Global
+.container {
+		@media @mobile{
+		max-width: 450px;
+	}
+}
+
+// Navigation
+	.navigation {
+
+		@media @mobile {
+			flex-wrap: wrap;
+		}
+
+		h1{
+
+			@media @mobile {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 2rem;
+			}
+
+		}
+
+		nav{
+			@media @mobile {
+				width: 100%;
+				justify-content: space-between;
+				border: 2px solid red;
+			}
+		}
+
+	}
