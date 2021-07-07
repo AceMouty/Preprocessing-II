@@ -42,5 +42,17 @@ img {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+	margin: 0 auto;
+	
+	@media @mobile{
+		max-width: 450px;
+	}
+}
+
+hr{
+	border-top: .2rem dashed @silver;
+
+	&:first-of-type{
+		margin: 0;
+	}
 }
